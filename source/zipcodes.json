@@ -284,22 +284,12 @@
   "1408": "Sangandaan",
   "1409": [
     "Kanluran Village",
-    "Kaunlaran Village",
     "Kaunlaran Village"
   ],
   "1410": "Maypajo",
-  "1411": [
-    "Fish Market",
-    "Fish Market"
-  ],
-  "1412": [
-    "Isla de Cocomo",
-    "Isla de Cocomo"
-  ],
-  "1413": [
-    "Kapitbahayan East",
-    "Kapitbahayan East"
-  ],
+  "1411": "Fish Market",
+  "1412": "Isla de Cocomo",
+  "1413": "Kapitbahayan East",
   "1420": "Kaybiga/Deparo",
   "1421": "Bagumbong/Pag-asa",
   "1422": "Novaliches North",
@@ -347,66 +337,21 @@
   "1554": "East Edsa",
   "1555": "Wack Wack Golf Club",
   "1556": "Greenhills South",
-  "1600": [
-    "Pasig CPO",
-    "Pasig CPO"
-  ],
-  "1601": [
-    "San Joaquin",
-    "San Joaquin"
-  ],
-  "1602": [
-    "Pinagbuhatan",
-    "Pinagbuhatan"
-  ],
-  "1603": [
-    "Kapitolio",
-    "Kapitolio"
-  ],
-  "1604": [
-    "Ugong",
-    "Ugong"
-  ],
-  "1605": [
-    "Ortigas PO",
-    "Ortigas PO"
-  ],
-  "1606": [
-    "Caniogan",
-    "Caniogan"
-  ],
-  "1607": [
-    "Maybunga",
-    "Maybunga"
-  ],
-  "1608": [
-    "Sta. Lucia",
-    "Sta. Lucia"
-  ],
-  "1609": [
-    "Rosario",
-    "Rosario"
-  ],
-  "1610": [
-    "Santolan",
-    "Santolan"
-  ],
-  "1611": [
-    "Manggahan",
-    "Manggahan"
-  ],
-  "1612": [
-    "Green Park",
-    "Green Park"
-  ],
-  "1620": [
-    "Aguho",
-    "Aguho"
-  ],
-  "1621": [
-    "Sta. Ana",
-    "Sta. Ana"
-  ],
+  "1600": "Pasig CPO",
+  "1601": "San Joaquin",
+  "1602": "Pinagbuhatan",
+  "1603": "Kapitolio",
+  "1604": "Ugong",
+  "1605": "Ortigas PO",
+  "1606": "Caniogan",
+  "1607": "Maybunga",
+  "1608": "Sta. Lucia",
+  "1609": "Rosario",
+  "1610": "Santolan",
+  "1611": "Manggahan",
+  "1612": "Green Park",
+  "1620": "Aguho",
+  "1621": "Sta. Ana",
   "1630": "Western Bicutan",
   "1631": "Bicutan",
   "1632": "Lower Bicutan",
@@ -449,7 +394,7 @@
   "1740": "Las Pinas CPO",
   "1741": "Remarville Subd.",
   "1742": [
-    "Pulang Lupa & Zapote",
+    "Zapote",
     "Pulang Lupa"
   ],
   "1743": "Cut-cut",

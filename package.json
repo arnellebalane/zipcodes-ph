@@ -1,6 +1,6 @@
 {
   "name": "zipcodes-ph",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Philippines zip code directory",
   "main": "source/index.js",
   "scripts": {
