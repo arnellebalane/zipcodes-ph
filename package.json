@@ -1,0 +1,23 @@
+{
+  "name": "zipcodes-ph",
+  "version": "1.0.0",
+  "description": "Philippines zip code directory",
+  "main": "source/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arnellebalane/zipcodes-ph.git"
+  },
+  "keywords": [
+    "philippines",
+    "zipcodes"
+  ],
+  "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arnellebalane/zipcodes-ph/issues"
+  },
+  "homepage": "https://github.com/arnellebalane/zipcodes-ph#readme"
+}
