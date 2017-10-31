@@ -4,7 +4,7 @@
   "description": "Philippines zip code directory",
   "main": "build/index.js",
   "scripts": {
-    "build": "babel --out-dir build --copy-files source",
+    "build": "babel --out-dir build --copy-files --ignore *.test.js source",
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "commit": "git-cz",
     "prebuild": "rimraf build",
