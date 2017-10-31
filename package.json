@@ -2,10 +2,12 @@
   "name": "zipcodes-ph",
   "version": "0.0.0-semantically-released",
   "description": "Philippines zip code directory",
-  "main": "source/index.js",
+  "main": "build/index.js",
   "scripts": {
+    "build": "babel --out-dir build --copy-files source",
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "commit": "git-cz",
+    "prebuild": "rimraf build",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "mocha source/index.test.js -w",
@@ -19,6 +21,10 @@
     "philippines",
     "zipcodes"
   ],
+  "files": [
+    "build",
+    "readme.md"
+  ],
   "author": "Arnelle Balane <arnellebalane@gmail.com> (https://arnellebalane.com/)",
   "license": "MIT",
   "bugs": {
@@ -26,12 +32,15 @@
   },
   "homepage": "https://github.com/arnellebalane/zipcodes-ph#readme",
   "devDependencies": {
+    "babel-cli": "6.26.0",
+    "babel-preset-es2015": "6.24.1",
     "codecov.io": "0.1.6",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
     "ghooks": "2.0.0",
     "istanbul": "0.4.5",
     "mocha": "4.0.1",
+    "rimraf": "2.6.2",
     "semantic-release": "^8.2.0"
   },
   "config": {
@@ -41,5 +50,10 @@
     "ghooks": {
       "pre-commit": "npm run test:single && npm run check-coverage"
     }
+  },
+  "babel": {
+    "presets": [
+      "es2015"
+    ]
   }
 }

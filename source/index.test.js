@@ -16,7 +16,7 @@ describe('find(zipcode)', function() {
 
     it('should return null when there are no results', function() {
         const expected = null;
-        const actual = zipcodes.find(0000);
+        const actual = zipcodes.find(0);
         assert.strictEqual(actual, expected);
     });
 
