@@ -10,8 +10,8 @@
     "prebuild": "rimraf build",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "mocha source/index.test.js -w",
-    "test:single": "istanbul cover -x *.test.js _mocha -- source/index.test.js"
+    "test": "istanbul cover -x *.test.js _mocha -- source/index.test.js",
+    "test:watch": "mocha source/index.test.js -w"
   },
   "repository": {
     "type": "git",
@@ -48,7 +48,7 @@
       "path": "node_modules/cz-conventional-changelog"
     },
     "ghooks": {
-      "pre-commit": "npm run test:single && npm run check-coverage"
+      "pre-commit": "npm run test && npm run check-coverage"
     }
   },
   "babel": {
