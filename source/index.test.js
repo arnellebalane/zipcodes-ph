@@ -17,7 +17,7 @@ describe('find(zipcode)', function() {
     it('should return null when there are no results', function() {
         const expected = null;
         const actual = zipcodes.find(0000);
-        assert.equal(actual, expected);
+        assert.strictEqual(actual, expected);
     });
 
     it('should accept zipcode as an integer', function() {
@@ -47,6 +47,6 @@ describe('reverse(location)', function() {
     it('should return null when zipcode for location is not found', function() {
         const expected = null;
         const actual = zipcodes.reverse('Random City That Does Not Exist');
-        assert.equal(actual, expected);
+        assert.strictEqual(actual, expected);
     });
 });

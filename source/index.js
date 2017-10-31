@@ -11,6 +11,6 @@ module.exports = {
                 return value === location;
             }
             return value.includes(location);
-        });
+        }) || null;
     }
 };
