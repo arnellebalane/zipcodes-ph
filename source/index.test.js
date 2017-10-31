@@ -1,5 +1,5 @@
-const assert = require('assert');
-const zipcodes = require('./index');
+import assert from 'assert';
+import zipcodes from './index';
 
 describe('find(zipcode)', function() {
     it('should return the name of the location when there is one result', function() {

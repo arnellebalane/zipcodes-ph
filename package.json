@@ -5,13 +5,13 @@
   "main": "build/index.js",
   "scripts": {
     "build": "babel --out-dir build --copy-files --ignore *.test.js source",
-    "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "check-coverage": "nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "commit": "git-cz",
     "prebuild": "rimraf build",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
-    "test": "istanbul cover -x *.test.js _mocha -- source/index.test.js",
-    "test:watch": "mocha source/index.test.js -w"
+    "test": "nyc mocha source/index.test.js --compilers js:babel-register",
+    "test:watch": "npm run test -- -w"
   },
   "repository": {
     "type": "git",
@@ -34,12 +34,14 @@
   "devDependencies": {
     "babel-cli": "6.26.0",
     "babel-preset-es2015": "6.24.1",
+    "babel-register": "6.26.0",
     "codecov.io": "0.1.6",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
     "ghooks": "2.0.0",
     "istanbul": "0.4.5",
     "mocha": "4.0.1",
+    "nyc": "11.2.1",
     "rimraf": "2.6.2",
     "semantic-release": "^8.2.0"
   },
@@ -55,5 +57,6 @@
     "presets": [
       "es2015"
     ]
-  }
+  },
+  "dependencies": {}
 }
