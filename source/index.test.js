@@ -32,3 +32,21 @@ describe('find(zipcode)', function() {
         assert.equal(actual, expected);
     });
 });
+
+describe('reverse(location)', function() {
+    it('should return the zipcode for the given location', function() {
+        let expected = 6000;
+        let actual = zipcodes.reverse('Cebu City');
+        assert.equal(actual, expected);
+
+        expected = 6042;
+        actual = zipcodes.reverse('Asturias');
+        assert.equal(actual, expected);
+    });
+
+    it('should return null when zipcode for location is not found', function() {
+        const expected = null;
+        const actual = zipcodes.reverse('Random City That Does Not Exist');
+        assert.equal(actual, expected);
+    });
+});
