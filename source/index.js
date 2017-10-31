@@ -2,7 +2,7 @@ const zipcodes = require('./zipcodes.json');
 
 module.exports = {
     find(zipcode) {
-        return zipcodes[zipcode] || null
+        return zipcodes[zipcode] || null;
     },
     reverse(location) {
         return Object.keys(zipcodes).find((zipcode) => {
