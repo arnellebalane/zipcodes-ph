@@ -6,6 +6,7 @@
   "scripts": {
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "commit": "git-cz",
+    "report-coverage": "cat ./coverage/lcov.info | codecov",
     "semantic-release": "semantic-release pre && npm publish && semantic-release post",
     "test": "mocha source/index.test.js -w",
     "test:single": "istanbul cover -x *.test.js _mocha -- source/index.test.js"
@@ -25,6 +26,7 @@
   },
   "homepage": "https://github.com/arnellebalane/zipcodes-ph#readme",
   "devDependencies": {
+    "codecov.io": "0.1.6",
     "commitizen": "2.9.6",
     "cz-conventional-changelog": "2.1.0",
     "ghooks": "2.0.0",
