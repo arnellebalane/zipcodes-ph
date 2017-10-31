@@ -1,6 +1,6 @@
-const zipcodes = require('./zipcodes.json');
+import zipcodes from './zipcodes.json';
 
-module.exports = {
+export default {
     find(zipcode) {
         return zipcodes[zipcode] || null;
     },
