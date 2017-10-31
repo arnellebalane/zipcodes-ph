@@ -16,7 +16,7 @@ Install via npm:
 $ npm install --save zipcodes-ph
 ```
 
-Browser builds are also available inside the `build` directory or in [unpkg.com](https://unpkg.com/).
+Browser builds are also available inside the `build` directory or in [unpkg.com](https://unpkg.com/zipcodes-ph@1.1.2/build/index.umd.js).
 
 ## Usage
 
@@ -30,6 +30,10 @@ zipcodes.reverse('Cebu City'); // 6000
 ```
 
 Browser:
+
+```html
+<script src="path/to/zipcodes-ph/build/index.umd.min.js"></script>
+```
 
 ```js
 // global variable `zipcodesPH` is exposed
