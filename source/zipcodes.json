@@ -2009,7 +2009,11 @@
   "9415": "Aleosan",
   "9416": "Banisilan",
   "9417": "Arakan",
-  "9500": "Gen. Santos City",
+  "9500": [
+    "Gen. Santos City",
+    "General Santos City",
+    "Lungsod ng General Santos"
+  ],
   "9501": "Alabel",
   "9502": "Maasim",
   "9503": "Malungon",
